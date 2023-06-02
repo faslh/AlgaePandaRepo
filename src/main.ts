@@ -4,8 +4,9 @@ import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 import koaQs from 'koa-qs';
 import { problemDetailsMiddleware } from 'rfc-7807-problem-details';
-import dataSource from './app/core/data-source';
-import routes from './app/features/routes';
+
+import dataSource from './core/data-source';
+import routes from './features/routes';
 
 // import logger from 'koa-logger';
 const application = koaQs(new Koa().use(cors({ origin: '*' })));
@@ -58,4 +59,3 @@ dataSource
   });
 
 export default application;
-console.log(process.env)

@@ -8,7 +8,10 @@
     "outDir": "dist",
     "baseUrl": ".",
     "rootDir": ".",
-    "types": ["node", "webpack-env"],
+    "types": [
+      "node",
+      "webpack-env"
+    ],
     "removeComments": true,
     "strict": true,
     "inlineSources": true,
@@ -23,5 +26,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true
   },
-  "exclude": ["node_modules", "migrations", "environment", "dist", "build"]
+  "exclude": [
+    "node_modules",
+    "migrations",
+    "environment",
+    "dist",
+    "build"
+  ]
 }
